@@ -1,0 +1,49 @@
+body {
+    padding-top: 56px;
+}
+.profile-image {
+    max-width: 150px;
+    border-radius: 50%;
+}
+.section-padding {
+    padding: 60px 0;
+}
+.project-description {
+visibility: hidden;
+max-height: 0;
+opacity: 0;
+transition: visibility 0s, opacity 0.5s ease, max-height 0.5s ease;
+overflow: hidden;
+}
+
+.card:hover .project-description {
+visibility: visible;
+max-height: 500px; /* maksymalna oczekiwana wysokość opisu */
+opacity: 1;
+}
+
+.card-img-top, .card-title {
+transition: opacity 0.5s ease;
+}
+
+.card:hover .card-img-top,
+.card:hover .card-title {
+opacity: 0;
+}
+footer {
+background-color: #333; /* Ciemne tło */
+color: white; /* Jasny tekst */
+}
+footer a {
+color: #f8f9fa; /* Jasny kolor linków */
+text-decoration: none; /* Brak podkreślenia */
+}
+footer a:hover {
+color: #ddd; /* Jasniejszy kolor linków przy najechaniu */
+}
+footer h5 {
+margin-bottom: 20px;
+}
+footer p {
+font-size: 0.9rem;
+}
