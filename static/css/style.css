@@ -5,9 +5,7 @@ body {
     max-width: 150px;
     border-radius: 50%;
 }
-.section-padding {
-    padding: 60px 0;
-}
+
 .project-description {
 visibility: hidden;
 max-height: 0;
@@ -30,20 +28,148 @@ transition: opacity 0.5s ease;
 .card:hover .card-title {
 opacity: 0;
 }
-footer {
-background-color: #333; /* Ciemne tło */
-color: white; /* Jasny tekst */
-}
-footer a {
-color: #f8f9fa; /* Jasny kolor linków */
-text-decoration: none; /* Brak podkreślenia */
-}
-footer a:hover {
-color: #ddd; /* Jasniejszy kolor linków przy najechaniu */
-}
+
+@keyframes gradientBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .navbar, footer {
+    background: linear-gradient(270deg, #e96443, #904e95);
+      background-size: 400% 400%; /* Large size to enable smooth transition */
+      animation: gradientBackground 15s ease infinite;
+      border: none;
+      box-shadow: 0 2px 4px rgba(0,0,0,.04);
+  }
+
 footer h5 {
-margin-bottom: 20px;
+    margin-bottom: 0; /* Removes the margin if you don't want space below the h5 */
+    color: #fff; /* White color for the text, ensuring it's readable on the gradient */
+    font-weight: normal; /* Normal font weight for the text */
+    line-height: 1.5; /* Adjust the line height to ensure it's centered vertically */
 }
-footer p {
-font-size: 0.9rem;
+
+footer a {
+    color: #fff; /* White color for links to stand out against the gradient background */
+    transition: color 0.3s ease-in-out; /* Transition for hover effect */
+}
+
+footer a:hover {
+    color: #ffd1a9; /* Lighter peach color on hover for a subtle effect */
+    text-decoration: none; /* Removes underline on hover */
+}
+
+footer i {
+    font-size: 1.25rem; /* Larger font size for icons, white color would also stand out */
+}
+
+
+.contact-info li {
+    padding: 0.5rem 0;
+}
+.contact-info i {
+    min-width: 30px;
+}
+.contact-info a {
+    color: #333;
+    transition: color 0.3s;
+}
+.contact-info a:hover {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.section-padding {
+    padding: 50px 0; /* Adjusted padding for more vertical space */
+    background-color: #f7f7f7; /* Light grey background for contrast */
+}
+
+.section-title {
+    color: #333; /* Dark grey color for the title */
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-transform: uppercase; /* Making the title uppercase for style */
+}
+
+.profile-image {
+    max-width: 200px; /* Slightly larger image */
+    border-radius: 50%; /* Perfect circle */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.profile-image:hover {
+    transform: scale(1.05); /* Slight increase in size on hover */
+}
+
+p {
+    color: #666; /* Lighter text color for the paragraph */
+    line-height: 1.6; /* Improved line height for readability */
+    font-size: 1.1rem; /* Slightly larger font size */
+}
+
+@media (max-width: 991px) {
+    .profile-image {
+        margin-bottom: 20px; /* Add space below image on smaller screens */
+    }
+}
+
+/* Optional: Add an animation to the image on load */
+@keyframes popIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.profile-image {
+    animation: popIn 0.5s ease-out forwards;
+}
+
+
+
+.navbar-brand,
+.navbar-nav .nav-link,
+footer h5,
+footer a {
+    color: #fff; /* White text color for contrast */
+    transition: color 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+.navbar-nav .nav-link {
+    margin-left: 1rem; /* Add some horizontal spacing between links */
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-brand:hover {
+    color: #ffd1a9; /* Lighter color on hover for visibility */
+}
+
+.navbar-toggler {
+    border-color: #ffd1a9; /* Toggler icon border color */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='%23FFFFFF' viewBox='0 0 30 30'><path stroke='%23ffd1a9' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>"); /* Custom SVG for the toggler icon */
+}
+
+.navbar .nav-link {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-link i {
+    margin-right: 5px; /* Adds spacing between icon and text */
+    /* Optional: you can add additional styles for the icons here */
+}
+
+/* Optional: if you want the icons to change color together with the text on hover */
+.navbar .nav-link:hover,
+.navbar .nav-link:hover i {
+    color: #fff; /* or any other color */
 }
