@@ -16,7 +16,7 @@ overflow: hidden;
 
 .card:hover .project-description {
 visibility: visible;
-max-height: 500px; /* maksymalna oczekiwana wysokość opisu */
+max-height: 500px;
 opacity: 1;
 }
 
@@ -37,31 +37,31 @@ opacity: 0;
   
   .navbar, footer {
     background: linear-gradient(270deg, #e96443, #904e95);
-      background-size: 400% 400%; /* Large size to enable smooth transition */
+      background-size: 400% 400%;
       animation: gradientBackground 15s ease infinite;
       border: none;
       box-shadow: 0 2px 4px rgba(0,0,0,.04);
   }
 
 footer h5 {
-    margin-bottom: 0; /* Removes the margin if you don't want space below the h5 */
-    color: #fff; /* White color for the text, ensuring it's readable on the gradient */
-    font-weight: normal; /* Normal font weight for the text */
-    line-height: 1.5; /* Adjust the line height to ensure it's centered vertically */
+    margin-bottom: 0;
+    color: #fff;
+    font-weight: normal;
+    line-height: 1.5;
 }
 
 footer a {
-    color: #fff; /* White color for links to stand out against the gradient background */
-    transition: color 0.3s ease-in-out; /* Transition for hover effect */
+    color: #fff;
+    transition: color 0.3s ease-in-out;
 }
 
 footer a:hover {
-    color: #ffd1a9; /* Lighter peach color on hover for a subtle effect */
-    text-decoration: none; /* Removes underline on hover */
+    color: #ffd1a9;
+    text-decoration: none;
 }
 
 footer i {
-    font-size: 1.25rem; /* Larger font size for icons, white color would also stand out */
+    font-size: 1.25rem;
 }
 
 
@@ -81,41 +81,40 @@ footer i {
 }
 
 .section-padding {
-    padding: 50px 0; /* Adjusted padding for more vertical space */
-    background-color: #f7f7f7; /* Light grey background for contrast */
+    padding: 50px 0;
+    background-color: #f7f7f7;
 }
 
 .section-title {
-    color: #333; /* Dark grey color for the title */
+    color: #333;
     margin-bottom: 15px;
     font-weight: 600;
-    text-transform: uppercase; /* Making the title uppercase for style */
+    text-transform: uppercase;
 }
 
 .profile-image {
-    max-width: 200px; /* Slightly larger image */
-    border-radius: 50%; /* Perfect circle */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
-    transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+    max-width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
 .profile-image:hover {
-    transform: scale(1.05); /* Slight increase in size on hover */
+    transform: scale(1.05);
 }
 
 p {
-    color: #666; /* Lighter text color for the paragraph */
-    line-height: 1.6; /* Improved line height for readability */
-    font-size: 1.1rem; /* Slightly larger font size */
+    color: #666;
+    line-height: 1.6;
+    font-size: 1.1rem;
 }
 
 @media (max-width: 991px) {
     .profile-image {
-        margin-bottom: 20px; /* Add space below image on smaller screens */
+        margin-bottom: 20px;
     }
 }
 
-/* Optional: Add an animation to the image on load */
 @keyframes popIn {
     from {
         transform: scale(0.5);
@@ -131,27 +130,25 @@ p {
     animation: popIn 0.5s ease-out forwards;
 }
 
-
-
 .navbar-brand,
 .navbar-nav .nav-link,
 footer h5,
 footer a {
-    color: #fff; /* White text color for contrast */
-    transition: color 0.3s ease-in-out; /* Smooth transition for hover effects */
+    color: #fff;
+    transition: color 0.3s ease-in-out;
 }
 
 .navbar-nav .nav-link {
-    margin-left: 1rem; /* Add some horizontal spacing between links */
+    margin-left: 1rem;
 }
 
 .navbar-nav .nav-link:hover,
 .navbar-brand:hover {
-    color: #ffd1a9; /* Lighter color on hover for visibility */
+    color: #ffd1a9;
 }
 
 .navbar-toggler {
-    border-color: #ffd1a9; /* Toggler icon border color */
+    border-color: #ffd1a9;
 }
 
 .navbar-toggler-icon {
@@ -164,12 +161,10 @@ footer a {
 }
 
 .navbar .nav-link i {
-    margin-right: 5px; /* Adds spacing between icon and text */
-    /* Optional: you can add additional styles for the icons here */
+    margin-right: 5px;
 }
 
-/* Optional: if you want the icons to change color together with the text on hover */
 .navbar .nav-link:hover,
 .navbar .nav-link:hover i {
-    color: #fff; /* or any other color */
+    color: #fff;
 }
