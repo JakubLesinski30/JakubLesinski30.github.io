@@ -188,6 +188,14 @@
     if (storedDarkMode) {
       toggleDarkMode();
     }
+  
+    // Sprawdź, czy tryb jest ustawiony podczas ładowania strony i zastosuj go
+    document.addEventListener('DOMContentLoaded', () => {
+      const storedDarkMode = localStorage.getItem('darkMode') === 'enabled';
+      if (storedDarkMode) {
+        toggleDarkMode();
+      }
+    });
   </script>
 </body>
 </html>
