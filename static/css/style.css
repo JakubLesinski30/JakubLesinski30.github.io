@@ -168,3 +168,13 @@ footer a {
 .navbar .nav-link:hover i {
     color: #fff;
 }
+.dark-mode {
+    background-color: #222;
+    color: #fff;
+  }
+  
+  .dark-mode-section {
+    background-color: #333;
+    color: #fff;
+  }
+  
