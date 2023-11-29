@@ -158,44 +158,28 @@
     </div>
 </footer>
 <script>
-    // Pobierz przycisk przełączający tryb ciemny
     const darkModeToggle = document.getElementById('dark-mode-toggle');
-  
-    // Pobierz elementy sekcji o_mnie, projekty i kontakt
     const sections = document.querySelectorAll('.section-padding');
-  
-    // Funkcja do zmiany trybu na ciemny lub jasny
+
     function toggleDarkMode() {
-      // Sprawdź, czy jest zapisany tryb w localStorage
-      const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
-  
-      // Zmień tryb
-      const newDarkMode = !isDarkMode;
-      localStorage.setItem('darkMode', newDarkMode ? 'enabled' : 'disabled'); // Zapisz tryb w localStorage
-  
-      // Zastosuj styl w zależności od trybu
-      document.body.classList.toggle('dark-mode', newDarkMode);
-      sections.forEach(section => {
-        section.classList.toggle('dark-mode-section', newDarkMode);
-      });
+        const isDarkModeEnabled = localStorage.getItem('darkMode') === 'enabled';
+        const newDarkMode = !isDarkModeEnabled;
+
+        localStorage.setItem('darkMode', newDarkMode ? 'enabled' : 'disabled');
+
+        document.body.classList.toggle('dark-mode', newDarkMode);
+        sections.forEach(section => {
+            section.classList.toggle('dark-mode-section', newDarkMode);
+        });
     }
-  
-    // Nasłuchuj zdarzenia kliknięcia na przycisk
+
     darkModeToggle.addEventListener('click', toggleDarkMode);
-  
-    // Sprawdź, czy tryb jest zapisany w localStorage i zastosuj go
+
     const storedDarkMode = localStorage.getItem('darkMode') === 'enabled';
     if (storedDarkMode) {
-      toggleDarkMode();
-    }
-  
-    // Sprawdź, czy tryb jest ustawiony podczas ładowania strony i zastosuj go
-    document.addEventListener('DOMContentLoaded', () => {
-      const storedDarkMode = localStorage.getItem('darkMode') === 'enabled';
-      if (storedDarkMode) {
         toggleDarkMode();
-      }
-    });
-  </script>
+    }
+</script>
+
 </body>
 </html>
