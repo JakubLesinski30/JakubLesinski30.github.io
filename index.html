@@ -166,12 +166,12 @@
   
     // Funkcja do zmiany trybu na ciemny lub jasny
     function toggleDarkMode() {
-      // Sprawdź, czy jest zapisany tryb w sessionStorage
-      const isDarkMode = sessionStorage.getItem('darkMode') === 'true';
+      // Sprawdź, czy jest zapisany tryb w localStorage
+      const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
   
       // Zmień tryb
       const newDarkMode = !isDarkMode;
-      sessionStorage.setItem('darkMode', newDarkMode); // Zapisz tryb w sessionStorage
+      localStorage.setItem('darkMode', newDarkMode ? 'enabled' : 'disabled'); // Zapisz tryb w localStorage
   
       // Zastosuj styl w zależności od trybu
       document.body.classList.toggle('dark-mode', newDarkMode);
@@ -183,8 +183,8 @@
     // Nasłuchuj zdarzenia kliknięcia na przycisk
     darkModeToggle.addEventListener('click', toggleDarkMode);
   
-    // Sprawdź, czy tryb jest zapisany w sessionStorage i zastosuj go
-    const storedDarkMode = sessionStorage.getItem('darkMode') === 'true';
+    // Sprawdź, czy tryb jest zapisany w localStorage i zastosuj go
+    const storedDarkMode = localStorage.getItem('darkMode') === 'enabled';
     if (storedDarkMode) {
       toggleDarkMode();
     }
