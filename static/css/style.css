@@ -18,10 +18,12 @@ overflow: hidden;
 visibility: visible;
 max-height: 500px;
 opacity: 1;
+text-align: center;
 }
 
 .card-img-top, .card-title {
 transition: opacity 0.5s ease;
+text-align: center;
 }
 
 .card:hover .card-img-top,
@@ -178,3 +180,42 @@ footer a {
     color: #fff;
   }
   
+  .dark-mode .col-lg-8,
+  .dark-mode .col-lg-8 p,
+  .dark-mode .col-lg-8 h2.section-title {
+      color: #fff;
+  }
+
+  .dark-mode .navbar-collapse .nav-link {
+    color: #000;
+}
+.dark-mode .navbar-brand {
+    color: #000;
+}
+.dark-mode footer h5 {
+    color: #000;
+}
+
+.dark-mode .dark-mode-card {
+    background-color: rgb(29, 28, 28);
+}
+
+.dark-mode .dark-mode-card a {
+    color: #007bff;
+}
+
+.dark-mode .project-description p {
+    color: #fff;
+    text-align: center;
+}
+
+.dark-mode #kontakt .bg-white, .dark-mode #kontakt .bg-white * {
+    background-color: rgb(29, 28, 28) !important;
+    color: #fff !important;
+}
+.dark-mode .profile-image {
+    max-width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(252, 252, 252, 0.1);
+    transition: transform 0.3s ease-in-out;
+}

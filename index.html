@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,13 +15,18 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="static/css/style.css">
+    <!-- https://github.com/JakubLesinski30/F12_PPM.js -->
+    <script src="static/js/F12_PPM.js"></script>
 </head>
+
 <body>
 
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">Portfolio - Jakub Lesiński</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -42,6 +48,7 @@
         </div>
     </nav>
 
+    <!-- Sekcja o_mnie -->
     <section id="o_mnie" class="section-padding">
         <div class="container">
             <div class="row align-items-center">
@@ -50,61 +57,163 @@
                 </div>
                 <div class="col-lg-8">
                     <h2 class="section-title">O mnie</h2>
-                    <p>Jako student informatyki z głęboką pasją do tworzenia stron i aplikacji internetowych, specjalizuję się w tworzeniu innowacyjnych i efektywnych rozwiązań webowych. Posiadam doświadczenie w projektowaniu nowoczesnych aplikacji, co pozwoliło mi na rozwój kompetencji w zakresie programowania i technologii internetowych. Moja praca inżynierska, koncentrująca się na aplikacjach Spring Boot, jest dostępna na twojepliki.tech i stanowi przykład moich umiejętności w zakresie tworzenia i zarządzania zaawansowanymi systemami webowymi. Dodatkowo, realizowałem wiele projektów, które umożliwiły mi zdobycie praktycznych doświadczeń w różnych aspektach web developmentu.</p>
+                    <p>Jako student informatyki z głęboką pasją do tworzenia stron i aplikacji internetowych,
+                        specjalizuję się w tworzeniu innowacyjnych i efektywnych rozwiązań webowych. Posiadam
+                        doświadczenie w projektowaniu nowoczesnych aplikacji, co pozwoliło mi na rozwój kompetencji w
+                        zakresie programowania i technologii internetowych. Moja praca inżynierska, koncentrująca się na
+                        aplikacjach Spring Boot, jest dostępna na twojepliki.tech i stanowi przykład moich umiejętności
+                        w zakresie tworzenia i zarządzania zaawansowanymi systemami webowymi. Dodatkowo, realizowałem
+                        wiele projektów, które umożliwiły mi zdobycie praktycznych doświadczeń w różnych aspektach web
+                        developmentu.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Sekcja projekty -->
     <section id="projekty" class="section-padding">
         <div class="container">
             <h2 class="text-center mb-4">Projekty</h2>
             <div class="row">
 
                 <div class="col-12 mb-4">
-                    <div class="card">
+                    <div class="card dark-mode-card">
                         <div class="card-body">
-                            <h5 class="card-title" style="text-align: center;">Platforma do wrzucania plików</h5>
+                            <h5 class="card-title">Platforma do wrzucania plików</h5>
                             <div class="project-description">
-                                <p class="card-text" style="text-align: center;"><a href="https://github.com/JakubLesinski30/Twojepliki">Twojepliki.tech</a></p>
-                                <p>Aplikacja internetowa, która umożliwia użytkownikom w efektywnym zarządzaniu ich plikami w chmurze.</p>
+                                <p class="card-text">
+                                <p>Twojepliki to aplikacja internetowa, stworzona z myślą o efektywnym zarządzaniu plikami w chmurze. Projekt umożliwia użytkownikom intuicyjne przeglądanie, organizowanie i udostępnianie swoich plików, zapewniając łatwość dostępu do danych z różnych urządzeń.</p>
+                                <p>Aplikacja oferuje przyjazny dla użytkownika interfejs, umożliwiający łatwe nawigowanie i efektywne zarządzanie plikami.</p>
+                                <p> Użytkownicy mogą przeglądać i usuwać pliki, a także organizować je w wygodny sposób za pomocą struktur folderów.</p>
+                                <p>Twojepliki umożliwiają współpracę poprzez udostępnianie plików z innymi użytkownikami.</p>
+                                <p>Projekt został zrealizowany przy użyciu języka programowania Java, oraz frameworka Spring Boot.</p>
+                                <a href="https://twojepliki.tech/">Platforma dostępna pod: twojepliki.tech</a></p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-12 mb-4">
-                    <div class="card">
+                    <div class="card dark-mode-card">
                         <div class="card-body">
-                            <h5 class="card-title" style="text-align: center;">Autorki CMS</h5>
+                            <h5 class="card-title">Autorski System zarządzania treścią</h5>
                             <div class="project-description">
-                                <p class="card-text" style="text-align: center;"><a href="https://github.com/JakubLesinski30/CMS">CMS</a></p>
-                                <p>Zaprojektowałem i zaimplementowałem własny system CMS, koncentrując się na elastyczności i łatwości użytkowania, wykorzystując nowoczesne technologie webowe.</p>
+                                <p class="card-text">
+                                    <p>Elastyczny System CMS to innowacyjne narzędzie stworzone z myślą o zapewnieniu elastyczności i łatwości użytkowania w zarządzaniu treściami. Projekt wykorzystuje nowoczesne technologie webowe, umożliwiając administratorom efektywne tworzenie, edycję i zarządzanie zawartością stron internetowych.</p>
+                                    <p>Administratorzy mogą dynamicznie dodawać, edytować i usuwać treści na stronie internetowej bez konieczności zaawansowanej wiedzy programistycznej.</p>
+                                <p>System umożliwia użytkownikom edycję treści na żywo, co skraca czas wprowadzania zmian i pozwala na natychmiastowe sprawdzenie efektów.</p>
+                                <p>Projekt został zrealizowany przy użyciu języka programowania Java, oraz frameworka Spring Boot.</p>
+                                <a href="https://github.com/JakubLesinski30/CMS">Link do repozytorium</a></p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-12 mb-4">
-                    <div class="card">
+                    <div class="card dark-mode-card">
                         <div class="card-body">
-                            <h5 class="card-title" style="text-align: center;">Platforma do wrzucania materiałów wideo</h5>
+                            <h5 class="card-title">Platforma do wrzucania materiałów wideo</h5>
                             <div class="project-description">
-                                <p class="card-text" style="text-align: center;"><a href="https://github.com/JakubLesinski30/Filmiki.online">Filmiki.online</a></p>
-                                <p>Stworzyłem platformę internetową umożliwiającą użytkownikom wrzucanie, przeglądanie i zarządzanie treściami wideo, kładąc szczególny nacisk na wydajność i bezpieczeństwo danych.</p>
+                                <p class="card-text">
+                                <p>Platforma która umożliwia użytkownikom łatwe wrzucanie, przeglądanie i zarządzanie treściami wideo. Projekt skupia się na zapewnieniu efektywnej obsługi treści wideo oraz bezpieczeństwie przechowywanych danych, tworząc atrakcyjne środowisko dla użytkowników i twórców treści.</p>
+                                <p>Użytkownicy mogą łatwo dodawać swoje materiały wideo do platformy, korzystając z intuicyjnego interfejsu.</p>
+                                <p>Platforma zapewnia płynne i efektywne przeglądanie treści wideo, umożliwiając użytkownikom łatwy dostęp do różnorodnych materiałów.</p>
+                                <p>Projekt został zrealizowany przy użyciu języka programowania Java, oraz frameworka Spring Boot.</p>
+                                <a href="https://github.com/JakubLesinski30/Filmiki.online">Link do repozytorium</a></p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-12 mb-4">
-                    <div class="card">
+                    <div class="card dark-mode-card">
                         <div class="card-body">
-                            <h5 class="card-title" style="text-align: center;">System rejestracji i logowania</h5>
+                            <h5 class="card-title">System rejestracji i logowania</h5>
                             <div class="project-description">
-                                <p class="card-text" style="text-align: center;"><a href="https://github.com/JakubLesinski30/Rejestracja_logowanie">Rejestracja i logowanie</a></p>
-                                <p>Opracowałem zaawansowany system rejestracji i logowania, który zapewnia bezpieczeństwo danych użytkowników oraz płynną integrację z różnymi modułami aplikacji.</p>
+                                <p class="card-text">
+                                <p>Zaawansowany System Rejestracji i Logowania to kompleksowe narzędzie stworzone w celu umożliwienia łatwej rejestracji, logowania i integracji z różnymi modułami aplikacji. Projekt skupia się na zapewnieniu wygodnego korzystania z systemu oraz efektywnego dostępu do funkcji aplikacji.</p>
+                                <p>System oferuje prosty i intuicyjny proces rejestracji oraz logowania, minimalizując barierę wejścia dla użytkowników.</p>
+                                <p>Projekt został zrealizowany przy użyciu języka programowania Java, oraz frameworka Spring Boot.</p>
+                                <a href="https://github.com/JakubLesinski30/Rejestracja_logowanie">Link do
+                                    repozytorium</a></p>
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 mb-4">
+                    <div class="card dark-mode-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Program do generowania haseł</h5>
+                            <div class="project-description">
+                                <p class="card-text">
+                                <p>Projekt Generatora Haseł został stworzony w celu generowania 11 unikalnych i
+                                    bezpiecznych haseł. Hasła te mogą być wykorzystane do zabezpieczenia kont
+                                    użytkowników, systemów, czy też innych zasobów wymagających solidnej ochrony. </p>
+                                <p> Program wykorzystuje algorytm do generowania haseł zawierających różnorodne elementy
+                                    takie jak liczby, znaki specjalne, oraz kombinacje małych i dużych liter. </p>
+                                <p> Generator może być obsługiwany za pomocą przyjaznego interfejsu graficznego, co
+                                    sprawia, że jest dostępny zarówno dla użytkowników bardziej zaawansowanych, jak i
+                                    tych mniej doświadczonych. </p>
+                                <p> Projekt został zaimplementowany przy użyciu języka programowania Java. </p>
+
+                                <a href="https://github.com/JakubLesinski30/Generuj_haslo">Link do
+                                    repozytorium</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja kontakt -->
+    <section id="kontakt" class="section-padding">
+        <div class="container">
+            <h2 class="text-center mb-4">Kontakt</h2>
+            <div class="row justify-content-center">
+                <div class="col-12 mb-4">
+                    <div class="bg-white p-4 rounded shadow-sm">
+                        <div class="contact-info mb-4">
+                            <ul class="list-unstyled">
+                                <li class="d-flex justify-content-between align-items-center mb-2">
+                                    <div>
+                                        <i class="fa fa-envelope fa-lg fa-fw text-primary"></i>
+                                        <a href="mailto:jakub.lesinski30@gmail.com">jakub.lesinski30@gmail.com</a>
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512">
+                                            <path
+                                                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                                        </svg>
+                                        <a href="https://github.com/JakubLesinski30">JakubLesinski30</a>
+                                    </div>
+                                </li>
+                                <li class="d-flex justify-content-between align-items-center mb-2">
+                                    <div>
+                                        <i class="fa fa-envelope-square fa-lg fa-fw text-primary"></i>
+                                        <a href="mailto:11104@student.pansim.edu.pl">11104@student.pansim.edu.pl</a>
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512">
+                                            <path
+                                                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                                        </svg>
+                                        <a href="https://github.com/JakubLesinski11104">JakubLesinski11104</a>
+                                    </div>
+                                </li>
+                                <li class="d-flex justify-content-between align-items-center mb-2">
+                                    <div>
+                                    </div>
+                                    <div>
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                        <a
+                                            href="https://www.linkedin.com/in/jakub-lesi%C5%84ski-554885299/">Linkedin</a>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -112,80 +221,18 @@
         </div>
     </section>
 
-<section id="kontakt" class="section-padding">
-    <div class="container">
-        <h2 class="text-center mb-4">Kontakt</h2>
-        <div class="row justify-content-center">
-            <div class="col-12 mb-4">
-                <div class="bg-white p-4 rounded shadow-sm">
-                    <div class="contact-info mb-4">
-                        <ul class="list-unstyled">
-                          <li class="d-flex justify-content-between align-items-center mb-2">
-                            <div>
-                              <i class="fa fa-envelope fa-lg fa-fw text-primary"></i> 
-                              <a href="mailto:jakub.lesinski30@gmail.com">jakub.lesinski30@gmail.com</a>
-                            </div>
-                            <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-                              <a href="https://github.com/JakubLesinski30">JakubLesinski30</a>
-                            </div>
-                          </li>
-                          <li class="d-flex justify-content-between align-items-center mb-2">
-                            <div>
-                              <i class="fa fa-envelope-square fa-lg fa-fw text-primary"></i> 
-                              <a href="mailto:11104@student.pansim.edu.pl">11104@student.pansim.edu.pl</a>
-                            </div>
-                            <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-                              <a href="https://github.com/JakubLesinski11104">JakubLesinski11104</a>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
+    <!-- Stopka -->
+    <footer class="text-light py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h5>&copy; 2023 Jakub Lesiński. Wszelkie prawa zastrzeżone.</h5>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </footer>
 
-<footer class="text-light py-4">
-    <div class="container">
-        <div class="row">
-            <div class="col text-center">
-                <h5>&copy; 2023 Jakub Lesiński. Wszelkie prawa zastrzeżone.</h5>
-            </div>
-        </div>
-    </div>
-</footer>
-<script>
-    const darkModeToggle = document.getElementById('dark-mode-toggle');
-    const sections = document.querySelectorAll('.section-padding');
-
-    function applyDarkMode(isDarkMode) {
-        document.body.classList.toggle('dark-mode', isDarkMode);
-        sections.forEach(section => {
-            section.classList.toggle('dark-mode-section', isDarkMode);
-        });
-    }
-
-    function toggleDarkMode() {
-        const isDarkModeEnabled = localStorage.getItem('darkMode') === 'enabled';
-        const newDarkMode = !isDarkModeEnabled;
-
-        localStorage.setItem('darkMode', newDarkMode ? 'enabled' : 'disabled');
-
-        console.log('Setting dark mode:', newDarkMode);
-        applyDarkMode(newDarkMode);
-    }
-
-    darkModeToggle.addEventListener('click', toggleDarkMode);
-
-    const storedDarkMode = localStorage.getItem('darkMode') === 'enabled';
-    console.log('Stored dark mode:', storedDarkMode);
-    applyDarkMode(storedDarkMode);
-</script>
-
-
-
+    <script src="static/js/tryb_ciemny.js"></script>
 </body>
+
 </html>
